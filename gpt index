@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Lynch | Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Mark Lynch</h1>
+    <p>Appleton, WI | mwlynch4@wisc.edu | (920) 585-7100</p>
+    <a href="https://www.linkedin.com/in/mark-lynch-a21a8b310/" target="_blank">
+        LinkedIn Profile
+    </a>
+</header>
+
+<section>
+    <h2>Objective</h2>
+    <p>
+        Seeking a summer internship or co-op position in industrial engineering to apply my skills 
+        in process optimization, data analysis, and systems design while gaining hands-on experience.
+    </p>
+</section>
+
+<section>
+    <h2>Education</h2>
+    <h3>University of Wisconsin–Madison</h3>
+    <p>Bachelor of Science in Industrial Engineering — Expected May 2028</p>
+    <p>GPA: 3.155 / 4.0</p>
+</section>
+
+<section>
+    <h2>Engineering Experience</h2>
+
+    <div class="job">
+        <h3>Tesla Engineering Charter School</h3>
+        <p>September 2020 – May 2024</p>
+        <ul>
+            <li>Assembled circuit boards and programmed microcontrollers using Arduino.</li>
+            <li>Designed CAD models and operated CNC machines and 3D printers.</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <h3>Student Performance Analysis — UW–Madison</h3>
+        <p>June 2025 – August 2025</p>
+        <ul>
+            <li>Applied regression modeling to analyze student test performance.</li>
+            <li>Used hypothesis testing and confidence intervals for decision making.</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <h3>Adaptive Art Device for Accessibility — UW–Madison</h3>
+        <p>September 2024 – December 2024</p>
+        <ul>
+            <li>Designed and 3D printed custom components.</li>
+            <li>Led prototyping of an accessible device for students with motor differences.</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <h3>Global Cellular Subscription Analysis — UW–Madison</h3>
+        <p>September 2025 – December 2025</p>
+        <ul>
+            <li>Analyzed World Bank telecommunications data in R across 190+ countries.</li>
+            <li>Used regression, ANOVA, and growth modeling to identify trends.</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <h3>Vehicle Acquisition Economic Analysis — UW–Madison</h3>
+        <p>September 2025 – December 2025</p>
+        <ul>
+            <li>Built discounted cashflow models to compare vehicle alternatives.</li>
+            <li>Performed sensitivity analysis on fuel and maintenance costs.</li>
+        </ul>
+    </div>
+
+</section>
+
+<section>
+    <h2>Professional Experience</h2>
+
+    <div class="job">
+        <h3>Yoshi's Home Services — Field Sales Representative</h3>
+        <p>May 2025 – August 2025</p>
+        <ul>
+            <li>Generated 20% of company revenue and exceeded sales goals.</li>
+            <li>Trained new team members and used data-driven strategies.</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <h3>Van Zeeland’s Landscaping — Technician</h3>
+        <p>June 2024 – August 2024</p>
+        <ul>
+            <li>Installed landscaping features and operated machinery.</li>
+            <li>Collaborated with clients to meet project expectations.</li>
+        </ul>
+    </div>
+
+</section>
+
+<section>
+    <h2>Activities</h2>
+    <ul>
+        <li>Institute of Industrial and Systems Engineering (IISE)</li>
+        <li>Human Factors and Ergonomics Society (HFES)</li>
+        <li>INFORMS</li>
+        <li>ISyE Connections</li>
+        <li>Top 20 DECA International Competitor (2024)</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <p><strong>Programming:</strong> Java, Python, SQL, R</p>
+    <p><strong>Software:</strong> Autodesk Revit, Onshape, Microsoft Excel, PowerPoint, Word</p>
+</section>
+
+<footer>
+    <p>© 2026 Mark Lynch</p>
+</footer>
+
+</body>
+</html>
