@@ -254,6 +254,12 @@ nav {
   display: inline-block;
 }
 
+.btn.copied {
+  background: var(--gold);
+  color: var(--bg);
+  border-color: var(--gold);
+}
+
 .btn-primary {
   background: var(--gold);
   color: var(--bg);
