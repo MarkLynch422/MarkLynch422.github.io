@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>R / RStudio — Mark Lynch Portfolio</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="../index.html" class="nav-logo">M<span>.</span>Lynch</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="r-studio.html" class="active">R / RStudio</a></li>
+    <li><a href="solidworks.html">SolidWorks</a></li>
+    <li><a href="powerbi.html">Power BI</a></li>
+    <li><a href="sql.html">SQL</a></li>
+    <li><a href="sap.html">SAP</a></li>
+    <li><a href="matlab.html">MATLAB</a></li>
+    <li><a href="julia.html">Julia</a></li>
+    <li><a href="visio.html">Visio</a></li>
+    <li><a href="powerapps.html">Power Apps</a></li>
+    <li><a href="capstone.html">Capstone</a></li>
+  </ul>
+  <button class="nav-hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- PROJECT HERO -->
+<div class="project-hero">
+  <a href="../index.html" class="project-back">← Back to Portfolio</a>
+  <p class="section-label">// Statistical Computing</p>
+  <h1>R / RStudio</h1>
+  <p style="max-width:620px; margin-top:0.8rem;">
+    Statistical modeling and data visualization using base R and ggplot2, applied to
+    real-world datasets spanning global telecommunications and student performance research.
+  </p>
+  <div class="project-meta">
+    <span class="tag">Regression</span>
+    <span class="tag">ANOVA</span>
+    <span class="tag">ggplot2</span>
+    <span class="tag">Data Cleaning</span>
+    <span class="tag">Hypothesis Testing</span>
+  </div>
+</div>
+
+<!-- PROJECT BODY -->
+<div class="project-body">
+
+  <!-- MAIN CONTENT -->
+  <div class="project-content">
+
+    <h2>Project 1 — Global Cellular Subscription Analysis</h2>
+    <p>
+      Analyzed World Bank and ITU mobile subscription data covering 192 countries from
+      2000–2022 to identify income, regional, and time-based predictors of global cellular
+      technology adoption. This was a team project (4 members) completed in ISyE 312 —
+      Data Management & Analysis for Industrial Engineering.
+    </p>
+
+    <h2>Research Questions</h2>
+    <ul>
+      <li>Does national income level predict mobile subscription rates, and how has that relationship changed from 2000 to 2022?</li>
+      <li>Does geographic region have a significant independent effect on subscription rates?</li>
+      <li>Are lower-income countries growing their subscription rates faster than higher-income ones?</li>
+      <li>Is there statistical evidence of beta-convergence — low-subscription countries catching up to high-subscription ones?</li>
+    </ul>
+
+    <h2>Methods & Results</h2>
+    <p>
+      All analysis was conducted in R using base statistical functions and ggplot2 for
+      visualization. The dataset required significant cleaning due to historical reporting
+      gaps, political border changes, and uneven global infrastructure rollout.
+    </p>
+
+    <ul>
+      <li>
+        <strong style="color:var(--text)">Simple Linear Regression (Income vs. Subscriptions):</strong>
+        Run separately for 2000 and 2022. In 2000: slope = 13.67, R² = 0.43, p ≈ 0.
+        In 2022: slope = 20.34, R² = 0.31, p ≈ 0. Model assumptions validated via QQ
+        plots and Cook's distance — identified and addressed influential outlier countries.
+      </li>
+      <li>
+        <strong style="color:var(--text)">Single-Factor ANOVA (Regional Effects):</strong>
+        Applied to 2022 data. Result: p = 0.00419, confirming region has a statistically
+        significant effect on subscription rates independent of income level.
+      </li>
+      <li>
+        <strong style="color:var(--text)">Growth Rate Regression:</strong>
+        Regressed year-over-year subscription growth against income. Slope = −6.264,
+        p = 0.002 — significant direction confirmed, but R² = 0.0023, meaning income
+        explains almost none of the variance. Infrastructure and urbanization are the
+        real drivers.
+      </li>
+      <li>
+        <strong style="color:var(--text)">Beta-Convergence Analysis:</strong>
+        Tested whether low-subscription countries are catching up. Slope = −123.22,
+        p = 0.155 (not significant), R² = 0.0105. Convergence trend exists but is not
+        income-driven.
+      </li>
+    </ul>
+
+    <h2>Key Finding</h2>
+    <p>
+      A clear income–subscription relationship exists, but geographic region and
+      infrastructure "leapfrogging" — countries skipping landline buildout and moving
+      directly to mobile — better explain why lower-income regions are closing the gap
+      faster than income alone would predict.
+    </p>
+
+    <h2>Tools Used</h2>
+    <ul>
+      <li>Base R — regression (lm), ANOVA (aov), residual diagnostics</li>
+      <li>ggplot2 — scatter plots, QQ plots, regression overlays, Cook's distance plots</li>
+      <li>Manual data cleaning — handling reporting gaps, political boundary changes, outliers</li>
+    </ul>
+
+    <hr style="border:none; border-top:1px solid var(--border); margin: 2.5rem 0;" />
+
+    <h2>Project 2 — Student Performance Analysis</h2>
+    <p>
+      Conducted hypothesis tests, confidence intervals, and linear regression on a public
+      dataset of 1,000 student exam scores to evaluate the impact of test preparation
+      and parental education on performance. ISyE 210 — Intro to Industrial Statistics,
+      team project (5 members).
+    </p>
+
+    <h2>Methods & Results</h2>
+    <ul>
+      <li>
+        <strong style="color:var(--text)">Descriptive Statistics:</strong>
+        Computed mean, variance, std dev, range, and proportions across all 9 data
+        components. Selected math scores, parental education level, and test prep
+        completion for deeper analysis.
+      </li>
+      <li>
+        <strong style="color:var(--text)">Hypothesis Testing (5 tests):</strong>
+        One-sample z-tests on mean math scores vs. national SAT benchmark, parental
+        education level, and reading scores vs. benchmark. One-sample z-test on test
+        prep completion rate vs. national benchmark. Two-sample z-test comparing math
+        scores between test-prep and non-test-prep groups.
+      </li>
+      <li>
+        <strong style="color:var(--text)">Confidence Interval:</strong>
+        95% CI for mean math score: [65.15, 67.03]. Confidence level selected based
+        on explicit precision vs. interval width tradeoff analysis.
+      </li>
+      <li>
+        <strong style="color:var(--text)">Simple Linear Regression (Manual Derivation):</strong>
+        Regressed math score on test prep completion. Slope = 5.62, intercept = 64.08,
+        R² = 0.0316. SSE, SST, and variance of random error computed by hand. Concluded
+        weak fit; multiple regression with additional predictors would perform better.
+      </li>
+    </ul>
+
+    <h2>Ethical Considerations</h2>
+    <p>
+      The analysis explicitly addressed Type I/Type II error implications and the ethics
+      of using demographic predictors (parental education, lunch status) to forecast
+      individual student performance — a dimension often omitted in introductory work.
+    </p>
+
+  </div>
+
+  <!-- SIDEBAR -->
+  <aside class="project-sidebar">
+
+    <div class="sidebar-panel">
+      <h4>Project 1 — Cellular Analysis</h4>
+      <div class="sidebar-row">
+        <span class="sidebar-key">Course</span>
+        <span class="sidebar-val">ISyE 312</span>
+      </div>
+      <div class="sidebar-row">
+        <span class="sidebar-key">Semester</span>
+        <span class="sidebar-val">Fall 2025</span>
+      </div>
+      <div class="sidebar-row">
+        <span class="sidebar-key">Team Size</span>
+        <span class="sidebar-val">4 members</span>
+      </div>
+      <div class="sidebar-row">
+        <span class="sidebar-key">Dataset</span>
+        <span class="sidebar-val">World Bank / ITU</span>
+      </div>
+      <div class="sidebar-row">
+        <span class="sidebar-key">Countries</span>
+        <span class="sidebar-val">192</span>
+      </div>
+      <div class="sidebar-row">
+        <span class="sidebar-key">Time Span</span>
+        <span class="sidebar-val">2000–2022</span>
+      </div>
+    </div>
+
+    <div class="sidebar-panel">
+      <h4>Project 2 — Student Performance</h4>
+      <div class="sidebar-row">
+        <span class="sidebar-key">Course</span>
+        <span class="sidebar-val">ISyE 210</span>
+      </div>
+      <div class="sidebar-row">
+        <span class="sidebar-key">Semester</span>
+        <span class="sidebar-val">Summer 2025</span>
+      </div>
+      <div class="sidebar-row">
+        <span class="sidebar-key">Team Size</span>
+        <span class="sidebar-val">5 members</span>
+      </div>
+      <div class="sidebar-row">
+        <span class="sidebar-key">Dataset</span>
+        <span class="sidebar-val">Public (n=1,000)</span>
+      </div>
+      <div class="sidebar-row">
+        <span class="sidebar-key">Tests Run</span>
+        <span class="sidebar-val">5 hypothesis tests</span>
+      </div>
+    </div>
+
+    <div class="sidebar-panel">
+      <h4>R Skills Demonstrated</h4>
+      <div class="sidebar-row">
+        <span class="sidebar-key">lm()</span>
+        <span class="sidebar-val">✓</span>
+      </div>
+      <div class="sidebar-row">
+        <span class="sidebar-key">aov()</span>
+        <span class="sidebar-val">✓</span>
+      </div>
+      <div class="sidebar-row">
+        <span class="sidebar-key">ggplot2</span>
+        <span class="sidebar-val">✓</span>
+      </div>
+      <div class="sidebar-row">
+        <span class="sidebar-key">Cook's Distance</span>
+        <span class="sidebar-val">✓</span>
+      </div>
+      <div class="sidebar-row">
+        <span class="sidebar-key">QQ Plots</span>
+        <span class="sidebar-val">✓</span>
+      </div>
+      <div class="sidebar-row">
+        <span class="sidebar-key">Data Cleaning</span>
+        <span class="sidebar-val">✓</span>
+      </div>
+    </div>
+
+  </aside>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>Mark Lynch &nbsp;|&nbsp; Industrial Engineering, UW–Madison &nbsp;|&nbsp;
+     <a href="mailto:mwlynch4@wisc.edu">mwlynch4@wisc.edu</a> &nbsp;|&nbsp;
+     <a href="https://linkedin.com/in/mark-lynch-a21a8b310" target="_blank">LinkedIn</a>
+  </p>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
