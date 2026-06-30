@@ -42,3 +42,21 @@ if ('IntersectionObserver' in window) {
     io.observe(el);
   });
 }
+/* === COPY EMAIL TO CLIPBOARD === */
+document.querySelectorAll('.copy-email').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const email = btn.getAttribute('data-email');
+
+    navigator.clipboard.writeText(email).then(() => {
+      const original = btn.textContent;
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+
+      setTimeout(() => {
+        btn.textContent = original;
+        btn.classList.remove('copied');
+      }, 1800);
+    });
+  });
+});
