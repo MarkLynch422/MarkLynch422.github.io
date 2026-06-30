@@ -6,15 +6,15 @@
 
 /* === TOKENS === */
 :root {
-  --bg:          #0A0A0F;
-  --panel:       #1A1A2E;
-  --panel-hover: #22223A;
-  --gold:        #C8A951;
-  --gold-dim:    #8A7335;
+  --bg:          #14070A;
+  --panel:       #2A0E0E;
+  --panel-hover: #3A1414;
+  --gold:        #D3A625;
+  --gold-dim:    #946B2D;
   --text:        #F0F0F0;
-  --text-muted:  #8A8A9A;
-  --border:      #2A2A4A;
-  --scan:        rgba(200, 169, 81, 0.18);
+  --text-muted:  #B89A9A;
+  --border:      #5A1E1E;
+  --scan:        rgba(211, 166, 37, 0.18);
 
   --font-display: 'Rajdhani', sans-serif;
   --font-body:    'Inter', sans-serif;
